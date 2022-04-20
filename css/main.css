@@ -210,11 +210,12 @@ margin-top: 10px;
     /* 마우스모양 : 손모양 */
     height: 45px;
     line-height: 45px;
-    border: 1px solid #2A3140;
+    /* border: 1px solid #2A3140; */
     color: #2A3140;
     padding: 0 30px;
     margin: 0 5px;
     box-sizing: border-box;
+    box-shadow: 2px 2px 10px #2a314088;
 }
 .motion .list li.on {
 box-shadow: 2px 3px 15px #2a314088;
