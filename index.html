@@ -5,17 +5,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
     <title>남희연 포트폴리오</title>
+    <!-- aos css -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <link href="css/main.css" rel="stylesheet" />
     <!-- css/main.css 을 ctrl+클릭해서 새 창 열어주기-->
 
     <!-- 팬시박스 css -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.css" integrity="sha512-nNlU0WK2QfKsuEmdcTwkeh+lhGs6uyOxuUs+n+0oXSYDok5qy0EI0lt01ZynHq6+p/tbgpZ7P+yUb+r71wqdXg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
+    <!-- animate.css -->
+    <head>
+        <link
+          rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+        />
+      </head>
     <!-- jquery -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <!-- 팬시박스 js -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha512-uURl+ZXMBrF4AwGaWmEetzrd+J5/8NRkWAvJx5sbPSSuOb0bZLqf+tOzniObO00BjHa/dD7gub9oCGMLPQHtQA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    
+    <!-- aos js -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
     <script>
         $(function(){
             //탭메뉴
@@ -26,6 +37,7 @@
                 $('.motion .list_cont').removeClass('on');
                 $('.motion .list_cont').eq($(this).index()).addClass('on');
             }); //click end
+            AOS.init();
         });
     </script>
 </head>
@@ -40,12 +52,14 @@
     </header>
     <section class="main_visual">
         <figure>
-            <img src="https://via.placeholder.com/1920x1000/ccc/ccc/?text=image" />
+            <img src="images/base.jpg" />
         </figure>
         <div class="title">
-            <h2>MOTION GRAPHIC DESIGNER</h2>
-            <p>NAM HEE YEON</p>
+            <div class="animate__animated animate__heartBeat">
+            <h2>MULTI DESIGNER</h2>
+            <p>Nam Hee Yeon</p>
             <a href="https://youtube.com/channel/UCCe96R4B2xOAzx2JJQNs7Nw">유튜브채널</a>
+            </div>
         </div><!-- .title end -->
     </section><!-- .main_visual end -->
 
@@ -55,40 +69,37 @@
             <p>내가 뽑은 베스트 작품</p>
         </div><!-- .title end -->
         <div class="cont">
-            <div class="youtube">
+            <div class="youtube" data-aos="fade-left">
                 <div class="youtube_in">
                     <!-- 유튜브 연결 -->
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/YwEbkN-5tic" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </div><!-- .youtube_in end -->
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/BJuLdVvDI3s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div><!-- .youtube_in end -->
             </div><!-- .youtube end -->
-            <div class="info">
-                <strong>#브이로그</strong>
-                <h4>영상제목넣기</h4>
-                <p>편집, 촬영, 연출, 디자인, 특수효과 / 모작</p>
-                <p>제작목적, 컨셉트 Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam autem voluptas veritatis, minus quaerat laudantium aut eligendi consequatur libero.</p>
+            <div class="info" data-aos="fade-right">
+                <strong>#여행브이로그</strong>
+                <h4>'흰여울문화마을'을 담다</h4>
+                <p>연출, 촬영, 편집, 디자인</p>
+                <p>카메라 앵글을 통해 바라본 '흰여울문화마을'의 모습을<br />
+                필름카메라의 필름이 점점 닳아지는 포인트를 주어 제작</p>
                 <dl>
                     <dt>프로그램</dt>
-                    <dd>일러스트레이터, 프리미어 프로, 에피터이펙트</dd>
+                    <dd>프리미어프로, 에프터이펙트</dd>
                 </dl>
                 <dl>
                     <dt>배경음악</dt>
-                    <dd>Neverland - HUAN</dd>
+                    <dd>Kicktracks - Midnight Lovers</dd>
                 </dl>
                 <dl>
                     <dt>러닝타임</dt>
-                    <dd>00:30:34</dd>
+                    <dd>00:03:10</dd>
                 </dl>
                 <ul>
                     <li>
-                        <a href="#" target="_blank">유튜브이동하기</a>
-                    </li>
-                    <li> 
-                        <a href="#" target="_blank">기획서보기</a>
-                     </li>   
+                        <a href="https://www.youtube.com/watch?v=BJuLdVvDI3s&t=30s" target="_blank">유튜브이동하기</a>
+                    </li>  
                 </ul>
             </div><!-- .info end -->
         </div><!-- .cont end -->
-
     </section><!-- .best_v end -->
 
     <section class="motion">
@@ -97,14 +108,14 @@
             <P>비디오, 애니메이션 기술을 이용한 영상제작</P>
         </div><!-- .title end -->
         <ul class="list">
-            <li class="on">게임</li>
-            <li>홍보영상</li>
-            <li>인포그래픽</li>
+            <li class="on">홍보영상</li>
+            <li>타이틀시퀀스</li>
             <li>브이로그</li>
-            <li>뮤비티저</li>
+            <li>3D</li>
+            <li>인포그래픽</li>
         </ul><!-- .list end -->
         <div class="motion_cont">
-            <div class="list_cont on"><!-- 게임 -->
+            <div class="list_cont on"><!-- 홍보영상 -->
                 <div class="items">
                     <div class="youtube">
                         <div class="youtube_in">
@@ -114,7 +125,7 @@
                     </div><!-- .youtube end -->
                     <div class="info">
                         <p>각본, 연출, 촬영, 편집, 보정, 특수효과</p>
-                        <h4>목포여행</h4>
+                        <h4>'토스' 브랜드 광고</h4>
                         <dl>
                             <dt>프로그램</dt>
                             <dd>Premiere Pro, After Effects</dd>
@@ -162,8 +173,8 @@
                         </dl>
                     </div><!-- .info end -->
                 </div><!-- .items end 2 -->
-            </div><!-- .list_cont end 게임 -->
-            <div class="list_cont"><!-- 홍보영상 -->
+            </div><!-- .list_cont end 홍보영상 -->
+            <div class="list_cont"><!-- 타이틀시퀀스 -->
                 <div class="items">
                     <div class="youtube">
                         <div class="youtube_in">
@@ -221,8 +232,184 @@
                         </dl>
                     </div><!-- .info end -->
                 </div><!-- .items end 2 -->
-            </div><!-- .list_cont end 홍보영상 -->
+            </div><!-- .list_cont end 타이틀시퀀스 -->
+            <div class="list_cont"><!-- 브이로그 -->
+                <div class="items">
+                    <div class="youtube">
+                        <div class="youtube_in">
+                            <!-- 유튜브연결 -->
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/rQtof64SwBQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div><!-- .youtube_in end -->
+                    </div><!-- .youtube end -->
+                    <div class="info">
+                        <p>각본, 연출, 촬영, 편집, 보정, 특수효과</p>
+                        <h4>제주여행</h4>
+                        <dl>
+                            <dt>프로그램</dt>
+                            <dd>Premiere Pro, After Effects</dd>
+                        </dl>
+                        <dl>
+                            <dt>러닝타임</dt>
+                            <dl>00:02:27</dl>
+                        </dl>
+                        <dl>
+                            <dt>배경음악</dt>
+                            <dd>Juice - Roa</dd>
+                        </dl>
+                        <dl>
+                            <dt>URL주소</dt>
+                            <dd><a href="https://www.youtube.com/watch?v=rQtof64SwBQ">영상보기</a></dd>
+                        </dl>
+                    </div><!-- .info end -->
+                </div><!-- .items end 1 -->
 
+                <div class="items">
+                    <div class="youtube">
+                        <div class="youtube_in">
+                            <!-- 유튜브연결 -->
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/6EC3O4qAyWU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div><!-- .youtube_in end -->
+                    </div><!-- .youtube end -->
+                    <div class="info">
+                        <p>각본, 연출, 촬영, 편집, 보정, 특수효과</p>
+                        <h4>포항여행</h4>
+                        <dl>
+                            <dt>프로그램</dt>
+                            <dd>Premiere Pro, After Effects</dd>
+                        </dl>
+                        <dl>
+                            <dt>러닝타임</dt>
+                            <dl>00:02:27</dl>
+                        </dl>
+                        <dl>
+                            <dt>배경음악</dt>
+                            <dd>Juice - Roa</dd>
+                        </dl>
+                        <dl>
+                            <dt>URL주소</dt>
+                            <dd><a href="https://www.youtube.com/watch?v=6EC3O4qAyWU">영상보기</a></dd>
+                        </dl>
+                    </div><!-- .info end -->
+                </div><!-- .items end 2 -->
+            </div><!-- .list_cont end 브이로그 -->
+            <div class="list_cont"><!-- 3D -->
+                <div class="items">
+                    <div class="youtube">
+                        <div class="youtube_in">
+                            <!-- 유튜브연결 -->
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/rQtof64SwBQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div><!-- .youtube_in end -->
+                    </div><!-- .youtube end -->
+                    <div class="info">
+                        <p>각본, 연출, 촬영, 편집, 보정, 특수효과</p>
+                        <h4>제주여행</h4>
+                        <dl>
+                            <dt>프로그램</dt>
+                            <dd>Premiere Pro, After Effects</dd>
+                        </dl>
+                        <dl>
+                            <dt>러닝타임</dt>
+                            <dl>00:02:27</dl>
+                        </dl>
+                        <dl>
+                            <dt>배경음악</dt>
+                            <dd>Juice - Roa</dd>
+                        </dl>
+                        <dl>
+                            <dt>URL주소</dt>
+                            <dd><a href="https://www.youtube.com/watch?v=rQtof64SwBQ">영상보기</a></dd>
+                        </dl>
+                    </div><!-- .info end -->
+                </div><!-- .items end 1 -->
+
+                <div class="items">
+                    <div class="youtube">
+                        <div class="youtube_in">
+                            <!-- 유튜브연결 -->
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/6EC3O4qAyWU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div><!-- .youtube_in end -->
+                    </div><!-- .youtube end -->
+                    <div class="info">
+                        <p>각본, 연출, 촬영, 편집, 보정, 특수효과</p>
+                        <h4>포항여행</h4>
+                        <dl>
+                            <dt>프로그램</dt>
+                            <dd>Premiere Pro, After Effects</dd>
+                        </dl>
+                        <dl>
+                            <dt>러닝타임</dt>
+                            <dl>00:02:27</dl>
+                        </dl>
+                        <dl>
+                            <dt>배경음악</dt>
+                            <dd>Juice - Roa</dd>
+                        </dl>
+                        <dl>
+                            <dt>URL주소</dt>
+                            <dd><a href="https://www.youtube.com/watch?v=6EC3O4qAyWU">영상보기</a></dd>
+                        </dl>
+                    </div><!-- .info end -->
+                </div><!-- .items end 2 -->
+            </div><!-- .list_cont end 3D -->
+            <div class="list_cont"><!-- 인포그래픽 -->
+                <div class="items">
+                    <div class="youtube">
+                        <div class="youtube_in">
+                            <!-- 유튜브연결 -->
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/rQtof64SwBQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div><!-- .youtube_in end -->
+                    </div><!-- .youtube end -->
+                    <div class="info">
+                        <p>각본, 연출, 촬영, 편집, 보정, 특수효과</p>
+                        <h4>제주여행</h4>
+                        <dl>
+                            <dt>프로그램</dt>
+                            <dd>Premiere Pro, After Effects</dd>
+                        </dl>
+                        <dl>
+                            <dt>러닝타임</dt>
+                            <dl>00:02:27</dl>
+                        </dl>
+                        <dl>
+                            <dt>배경음악</dt>
+                            <dd>Juice - Roa</dd>
+                        </dl>
+                        <dl>
+                            <dt>URL주소</dt>
+                            <dd><a href="https://www.youtube.com/watch?v=rQtof64SwBQ">영상보기</a></dd>
+                        </dl>
+                    </div><!-- .info end -->
+                </div><!-- .items end 1 -->
+
+                <div class="items">
+                    <div class="youtube">
+                        <div class="youtube_in">
+                            <!-- 유튜브연결 -->
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/6EC3O4qAyWU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div><!-- .youtube_in end -->
+                    </div><!-- .youtube end -->
+                    <div class="info">
+                        <p>각본, 연출, 촬영, 편집, 보정, 특수효과</p>
+                        <h4>포항여행</h4>
+                        <dl>
+                            <dt>프로그램</dt>
+                            <dd>Premiere Pro, After Effects</dd>
+                        </dl>
+                        <dl>
+                            <dt>러닝타임</dt>
+                            <dl>00:02:27</dl>
+                        </dl>
+                        <dl>
+                            <dt>배경음악</dt>
+                            <dd>Juice - Roa</dd>
+                        </dl>
+                        <dl>
+                            <dt>URL주소</dt>
+                            <dd><a href="https://www.youtube.com/watch?v=6EC3O4qAyWU">영상보기</a></dd>
+                        </dl>
+                    </div><!-- .info end -->
+                </div><!-- .items end 2 -->
+            </div><!-- .list_cont end 인포그래픽 -->
         </div><!-- .motion_cont end -->
     </section><!-- .motion end -->
 

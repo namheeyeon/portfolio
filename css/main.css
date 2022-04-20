@@ -2,9 +2,9 @@
 
 * {margin: 0; padding: 0;}
 li {list-style: none;}
-a {text-decoration: none; color: #333;}
+a {text-decoration: none; color: #2A3140;}
 html, body {
-    color: #333;
+    color: #2A3140;
     min-width: 1280px;
 }
 
@@ -68,13 +68,22 @@ header div a {
     margin-bottom: 40px;
 }
 .main_visual .title a {
-    color: #fff;
+    color: #F2EFEB;
     width: 150px;
     height: 50px;
     line-height: 50px;
-    background-color: cadetblue;
+    background-color: #2A3140;
+    border-radius: 20px 0;
     text-align: center;
+    display: block;
 }
+.main_visual .title a:hover {
+    box-shadow: 2px 3px 15px #6c7a8c3d;
+    background-color: #6c7a8c;
+    font-size: smaller;
+}
+
+
 
 /* .best_v */
 .best_v {
@@ -153,22 +162,29 @@ header div a {
 }
 .best_v .cont .info ul {
     display: flex;
+    margin-left: 100px;
 }
 .best_v .cont .info ul li a {
 height: 45px;
 line-height: 45px;
-border: 1px solid #333;
+border: 1px solid #2A3140;
+border-radius: 10px 0;
+background-color: #2A3140;
+color: #f2efeb;
 box-sizing: border-box;
 /* 테두리 : 1px 직선 색상 */
 /* 테두리를 포함해서 높이(45px)가 잡힐 수 있도록 설정 */
 display: block;
 padding: 0 25px;
 margin-right: 10px;
+margin-top: 10px;
 }
-.best_v .cont .info ul li:nth-child(1) a {
-background-color: mediumblue;
-color: #fff;
-}
+
+.best_v .cont .info ul li a:hover {
+    box-shadow: 2px 3px 15px #6c7a8c62;
+    border: 1px solid #6c7a8c; 
+    background-color: #6c7a8c;
+    }
 
 /* .motion 붙여넣기 */
 .motion {
@@ -194,15 +210,16 @@ color: #fff;
     /* 마우스모양 : 손모양 */
     height: 45px;
     line-height: 45px;
-    border: 1px solid #ccc;
+    border: 1px solid #2A3140;
+    color: #2A3140;
     padding: 0 30px;
     margin: 0 5px;
     box-sizing: border-box;
 }
 .motion .list li.on {
-box-shadow: 2px 3px 15px rgba(255, 0, 0, 0.4);
+box-shadow: 2px 3px 15px #2a314088;
 /* 그림자 : x축 y축 블러 색상 */
-background-color: rgb(255, 0, 0);
+background-color: #2A3140;
 color: white;
 border: 0;
 
