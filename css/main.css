@@ -1,6 +1,24 @@
 @charset "utf-8";
 
-* {margin: 0; padding: 0;}
+@font-face {
+    font-family: 'GmarketSansMedium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GmarketSansLight';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansLight.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+
+
+* {margin: 0; padding: 0; font-family: 'GmarketSansLight';}
 li {list-style: none;}
 a {text-decoration: none; color: #2A3140;}
 html, body {
@@ -21,9 +39,12 @@ header div {
 }
 header div h1 a {
     font-size: 25px;
+    font-weight: bold;
+    letter-spacing: 1px;
 }
 header div a {
     font-size: 20px;
+    font-weight: bold;
 }
 
 /* .main_visual */
@@ -60,12 +81,17 @@ header div a {
 }
 .main_visual .title h2 {
     width: 100%;
-    font-size: 60px;
+    font-size: 65px;
+    font-family: 'GmarketSansMedium';
+    text-shadow: 2px 3px 15px #2A3140;
+    letter-spacing: 2px;
 }
 .main_visual .title p {
     width: 100%;
-    font-size: 30px;
+    font-size: 35px;
+    font-family: 'Georgia';
     margin-bottom: 40px;
+    text-shadow: 2px 2px 15px #2A3140;
 }
 .main_visual .title a {
     color: #F2EFEB;
@@ -76,11 +102,13 @@ header div a {
     border-radius: 20px 0;
     text-align: center;
     display: block;
+    font-family: 'GmarketSansMedium';
+    font-size: 18px;
 }
 .main_visual .title a:hover {
     box-shadow: 2px 3px 15px #6c7a8c3d;
     background-color: #6c7a8c;
-    font-size: smaller;
+    font-size: medium;
 }
 
 
@@ -92,13 +120,15 @@ header div a {
 }
 .best_v .title {
     text-align: center;
-    margin-bottom: 40px;
+    margin-bottom: 45px;
 }
 .best_v .title h3 {
-    font-size: 40px;
+    font-size: 45px;
+    font-family: 'Georgia';
 }
 .best_v .title p {
-    font-size: 20px;
+    font-size: 22px;
+    font-family: 'GmarketSansMedium';
 }
 .best_v .cont {
     width: 1280px;
@@ -144,8 +174,13 @@ header div a {
 .best_v .cont .info h4 {
     font-size: 30px;
     margin-bottom: 5px;
+    font-family: 'GmarketSansMedium';
+}
+.best_v .cont .info p:nth-of-type(1) {
+    font-family: 'GmarketSansMedium';
 }
 .best_v .cont .info p:nth-of-type(2) {
+    font-size: large;
     margin: 20px 0 40px;
     /* 외부여백 위20px 아래40px */
     /* margin-top: 20px;
@@ -157,7 +192,7 @@ header div a {
     margin-bottom: 10px;
 }
 .best_v .cont .info dl dt {
-    font-weight: bold;
+    font-family: 'GmarketSansMedium';
     width: 100px;
 }
 .best_v .cont .info ul {
@@ -178,6 +213,8 @@ display: block;
 padding: 0 25px;
 margin-right: 10px;
 margin-top: 10px;
+font-family: 'GmarketSansMedium';
+font-size: large;
 }
 
 .best_v .cont .info ul li a:hover {
@@ -195,10 +232,12 @@ margin-top: 10px;
     margin-bottom: 40px;
 }
 .motion .title h3 {
-   font-size: 40px; 
+   font-size: 45px; 
+   font-family: 'Georgia';
 }
 .motion .title p {
-    font-size: 20px;
+    font-size: 22px;
+    font-family: 'GmarketSansMedium';
 }
 .motion .list {
     display: flex;
@@ -216,6 +255,9 @@ margin-top: 10px;
     margin: 0 5px;
     box-sizing: border-box;
     box-shadow: 2px 2px 10px #2a314088;
+
+    font-weight: bold;
+    font-size: 20px;
 }
 .motion .list li.on {
 box-shadow: 2px 3px 15px #2a314088;
@@ -262,9 +304,13 @@ border: 0;
 .motion .motion_cont .list_cont .items .info {
     padding: 30px;
 }
+.motion .motion_cont .list_cont .items .info p {
+    font-weight: bold;
+}
 .motion .motion_cont .list_cont .items .info h4 {
     font-size: 30px;
-    margin-bottom: 20pxs;
+    font-family: 'GmarketSansMedium';;
+    margin-bottom: 20px;
 }
 .motion .motion_cont .list_cont .items .info dl {
     display: flex;
@@ -272,7 +318,7 @@ border: 0;
 }
 .motion .motion_cont .list_cont .items .info dl dt {
     width: 20%;
-    font-weight: bold;
+    font-family: 'GmarketSansMedium';
 }
 .motion .list_cont .items .info dl dd:hover a {
     text-decoration: underline;
@@ -316,7 +362,8 @@ border: 0;
     width: 49%;     /* 두개가 49%씩 들어가게 */
 /*    background-color: #fff;
     display: flex;
-    align-items: center;
+    a
+    gn-items: center;
     /* 한 줄일 때 수직정렬 */
 /*}
 .g_ver05 .cont .items figure {
@@ -351,29 +398,34 @@ border: 0;
 
         /* .g_ver02 */
         .g_ver05 {
-            background: url('images/visual1-1.jpg') center center / cover no-repeat;
-            background-attachment: fixed;
+            background-color: #979da63f;
 
             padding: 100px 0;
         }
         .g_ver05 .title {
             text-align: center;
-            color: #fff;
             width: 1280px;
             margin: 0 auto;
         }
         .g_ver05 .title h3 {
             font-size: 45px;
+            font-family: 'Georgia';
         }
         .g_ver05 .title p {
-            font-size: 20px;
+            font-size: 22px;
+            font-family: 'GmarketSansMedium';
         }
         .g_ver05 .title em {
-            font-size: 13px;
+            font-size: 15px;
+            font-weight: bold;
             text-align: right;
            /*  background-color: aquamarine; */
             display: block;
             margin: 40px 0 10px;
+            /* 글자크기 : 13px
+        텍스트 오른쪽 정렬
+        외부여백 위로 40px
+        외부여백 아래로 10px */
 
         }
         .g_ver05 .cont {
@@ -381,10 +433,12 @@ border: 0;
             margin: 0 auto;
             display: flex;
             justify-content: space-between;
+            flex-wrap: wrap;
         }
         .g_ver05 .cont .items {
             width: 45%;
-            background-color: #fff;
+            /* background-color: #fff; */
+            margin-bottom: 30px;
         }
         .g_ver05 .cont .items figure {
             width: 100%;
@@ -399,13 +453,17 @@ border: 0;
         }
         .g_ver05 .cont .items .info {
             padding: 20px;
+            background-color: #fff;
         }
         .g_ver05 .cont .items .info p {
-            font-size: 14px;
+            font-size: 16px;
             margin-bottom: 15px;
+            font-weight: bold;
         }
         .g_ver05 .cont .items .info h4 {
-            font-size: 20px;
+            font-size: 30px;
+            margin-bottom: 10px;
+            font-family: 'GmarketSansMedium';
         }
         /* 마우스 올리면 이미지 커지게 */
         .g_ver05 .cont .items:hover figure img {
@@ -446,9 +504,10 @@ border: 0;
         .about .cont .info div h4 {
             font-size: 30px;
             margin-bottom: 20px;
+            font-family: 'GmarketSansMedium';
         }
         .about .cont .info div dl dt {
-            font-weight: bold;
+            font-weight: bolder;
             font-size: 20px;
             margin-bottom: 5px;
         }
@@ -458,14 +517,20 @@ border: 0;
         .about .cont .info div p {
             font-size: 20px;
         }
+
+        /* footer부분 */
         footer {
             background-color: #333;
             text-align: center;
             color: #fff;
             padding: 100px 0;
         }
+        footer h3 {
+            font-family: 'Georgia';
+            font-size: 20px;
+        }
         footer ul li {
-            width: 220px;
+            width: 240px;
             height: 50px;
             line-height: 50px;
             border: 1px solid #fff;
@@ -480,17 +545,24 @@ border: 0;
         }
         footer ul li a {
             color: #fff;
+            font-family: 'GmarketSansMedium';
+            font-size: 16px;
         }
         footer ul li:first-child {
-            background-color: cornflowerblue;
+            background-color: #6c7a8c;
             font-weight: bold;
         }
         footer ul li:first-child a {
             /* 글자색상 조절 */
-            color: lightcyan;
+            color: #f2efeb;
         }
-        footer ul li:nth-child(4) {
-            font-size: 14px
+        footer ul li:first-child:hover {
+            background-color: #979da6;
+            font-size: larger;
+        }
+        footer ul li:nth-child(3) {
+            font-size: 13px;
+            font-family: 'GmarketSansMedium';
         }
         footer p {
             margin-top: 20px;
@@ -563,3 +635,38 @@ border: 0;
         overflow-x: hidden;
     }
 } /* 해상도 960px 이하 */
+
+@media screen and (max-width:640px) {
+    .main_visual .title h3 {
+        font-size: 30px !important;
+    }
+    .main_visual .title p {
+        font-size: 16px !important ;
+    }
+    section .info h4 {
+        font-size: 22px !important;
+        /* 앞에 설정들 다 무시하겠단 의미 */
+    }
+    .main_visual .title h2 {
+        font-size: 40px;
+    }
+    .motion .list_cont .items .info {
+        padding: 15px;
+    }
+    .motion .list_cont .items .info dl dt {
+        width: 30%;
+    }
+    .motion .list_cont .items .info dl dd {
+        width: 70%;
+        word-break: break-all;
+        /* 줄바꿈 : 글자별 */
+    }
+    .g_ver05 .cont .items figure {
+        height: 300px;
+    }
+    .about .cont .info div h4 {margin-bottom: 10px;}
+    .about .cont .info div p {font-size: 16px;}
+    .about .cont .info div dl dt {font-size: 16px;}
+    .about .cont .info div dl dd {font-size: 16px;}
+
+}/* 해상도 640px 이하 */
