@@ -4,7 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
-    <title>남희연 포트폴리오</title>
+    <title>남희연의 포트폴리오</title>
+    <!-- xeicon https://xpressengine.github.io/XEIcon/started.html -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+
     <!-- aos css -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
@@ -27,6 +30,24 @@
     <!-- aos js -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
+    <!-- scroll -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script>
+        $( document ).ready( function() {
+        $( window ).scroll( function() {
+            if ( $( this ).scrollTop() > 300 ) {
+                $( '.scroll, .top' ).fadeIn();
+            } else {
+                $( '.scroll, .top' ).fadeOut();
+            }
+        } );
+        $( '.scroll, .top' ).click( function() {
+            $( 'html, body' ).animate( { scrollTop : 0 }, 400);
+            return false;
+        } );
+        } );
+    </script>
+
     <script>
         $(function(){
             //탭메뉴
@@ -42,12 +63,16 @@
     </script>
 </head>
 <body>
+    <!-- scroll -->
+    <div class="scroll">
+        <a href="#" class="top"><i class="xi-caret-up"></i>Top</a>
+    </div><!-- .scroll end -->
     <header>
         <div>
             <h1 class="animate__animated animate__fadeInLeft">
-                <a href="#">NAMHEEYEON</a>
+                <a href="index.html"><i class="xi-home"></i>NAMHEEYEON</a>
             </h1>
-            <a class="animate__animated animate__fadeInRight" href="index.html">resume</a>
+            <a class="animate__animated animate__fadeInRight" href="index.html">resume<i class="xi-file-download-o"></i></a>
         </div>
     </header>
     <section class="main_visual">
@@ -58,7 +83,7 @@
             <div>
             <h2 class="animate__animated animate__fadeInDown">MULTI DESIGNER</h2>
             <p class="animate__animated animate__fadeInDown">Nam Hee Yeon</p>
-            <a class="animate__animated animate__fadeInUp" href="https://youtube.com/channel/UCCe96R4B2xOAzx2JJQNs7Nw">유튜브채널</a>
+            <a class="animate__animated animate__fadeInUp" href="https://youtube.com/channel/UCCe96R4B2xOAzx2JJQNs7Nw"><i class="xi-youtube-play"></i>유튜브채널</a>
             </div>
         </div><!-- .title end -->
     </section><!-- .main_visual end -->
